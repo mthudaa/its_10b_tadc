@@ -1,0 +1,172 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1748862577
+<< error_p >>
+rect -29 271 29 277
+rect -29 237 -17 271
+rect -29 231 29 237
+rect -29 71 29 77
+rect -29 37 -17 71
+rect -29 31 29 37
+rect -29 -37 29 -31
+rect -29 -71 -17 -37
+rect -29 -77 29 -71
+rect -29 -237 29 -231
+rect -29 -271 -17 -237
+rect -29 -277 29 -271
+<< pwell >>
+rect -211 -409 211 409
+<< nmos >>
+rect -15 109 15 199
+rect -15 -199 15 -109
+<< ndiff >>
+rect -73 187 -15 199
+rect -73 121 -61 187
+rect -27 121 -15 187
+rect -73 109 -15 121
+rect 15 187 73 199
+rect 15 121 27 187
+rect 61 121 73 187
+rect 15 109 73 121
+rect -73 -121 -15 -109
+rect -73 -187 -61 -121
+rect -27 -187 -15 -121
+rect -73 -199 -15 -187
+rect 15 -121 73 -109
+rect 15 -187 27 -121
+rect 61 -187 73 -121
+rect 15 -199 73 -187
+<< ndiffc >>
+rect -61 121 -27 187
+rect 27 121 61 187
+rect -61 -187 -27 -121
+rect 27 -187 61 -121
+<< psubdiff >>
+rect -175 339 -79 373
+rect 79 339 175 373
+rect -175 277 -141 339
+rect 141 277 175 339
+rect -175 -339 -141 -277
+rect 141 -339 175 -277
+rect -175 -373 -79 -339
+rect 79 -373 175 -339
+<< psubdiffcont >>
+rect -79 339 79 373
+rect -175 -277 -141 277
+rect 141 -277 175 277
+rect -79 -373 79 -339
+<< poly >>
+rect -33 271 33 287
+rect -33 237 -17 271
+rect 17 237 33 271
+rect -33 221 33 237
+rect -15 199 15 221
+rect -15 87 15 109
+rect -33 71 33 87
+rect -33 37 -17 71
+rect 17 37 33 71
+rect -33 21 33 37
+rect -33 -37 33 -21
+rect -33 -71 -17 -37
+rect 17 -71 33 -37
+rect -33 -87 33 -71
+rect -15 -109 15 -87
+rect -15 -221 15 -199
+rect -33 -237 33 -221
+rect -33 -271 -17 -237
+rect 17 -271 33 -237
+rect -33 -287 33 -271
+<< polycont >>
+rect -17 237 17 271
+rect -17 37 17 71
+rect -17 -71 17 -37
+rect -17 -271 17 -237
+<< locali >>
+rect -175 339 -79 373
+rect 79 339 175 373
+rect -175 277 -141 339
+rect 141 277 175 339
+rect -33 237 -17 271
+rect 17 237 33 271
+rect -61 187 -27 203
+rect -61 105 -27 121
+rect 27 187 61 203
+rect 27 105 61 121
+rect -33 37 -17 71
+rect 17 37 33 71
+rect -33 -71 -17 -37
+rect 17 -71 33 -37
+rect -61 -121 -27 -105
+rect -61 -203 -27 -187
+rect 27 -121 61 -105
+rect 27 -203 61 -187
+rect -33 -271 -17 -237
+rect 17 -271 33 -237
+rect -175 -339 -141 -277
+rect 141 -339 175 -277
+rect -175 -373 -79 -339
+rect 79 -373 175 -339
+<< viali >>
+rect -17 237 17 271
+rect -61 121 -27 187
+rect 27 121 61 187
+rect -17 37 17 71
+rect -17 -71 17 -37
+rect -61 -187 -27 -121
+rect 27 -187 61 -121
+rect -17 -271 17 -237
+<< metal1 >>
+rect -29 271 29 277
+rect -29 237 -17 271
+rect 17 237 29 271
+rect -29 231 29 237
+rect -67 187 -21 199
+rect -67 121 -61 187
+rect -27 121 -21 187
+rect -67 109 -21 121
+rect 21 187 67 199
+rect 21 121 27 187
+rect 61 121 67 187
+rect 21 109 67 121
+rect -29 71 29 77
+rect -29 37 -17 71
+rect 17 37 29 71
+rect -29 31 29 37
+rect -29 -37 29 -31
+rect -29 -71 -17 -37
+rect 17 -71 29 -37
+rect -29 -77 29 -71
+rect -67 -121 -21 -109
+rect -67 -187 -61 -121
+rect -27 -187 -21 -121
+rect -67 -199 -21 -187
+rect 21 -121 67 -109
+rect 21 -187 27 -121
+rect 61 -187 67 -121
+rect 21 -199 67 -187
+rect -29 -237 29 -231
+rect -29 -271 -17 -237
+rect 17 -271 29 -237
+rect -29 -277 29 -271
+<< labels >>
+rlabel psubdiffcont 0 -356 0 -356 0 B
+port 50 nsew
+rlabel ndiffc -44 -154 -44 -154 0 D0
+port 51 nsew
+rlabel ndiffc 44 -154 44 -154 0 S0
+port 52 nsew
+rlabel polycont 0 -54 0 -54 0 G0
+port 53 nsew
+rlabel ndiffc -44 154 -44 154 0 D1
+port 54 nsew
+rlabel ndiffc 44 154 44 154 0 S1
+port 55 nsew
+rlabel polycont 0 254 0 254 0 G1
+port 56 nsew
+<< properties >>
+string FIXED_BBOX -158 -356 158 356
+string gencell sky130_fd_pr__nfet_01v8
+string library sky130
+string parameters w 0.45 l 0.15 m 2 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 class mosfet compatible {sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_lvt  sky130_fd_bs_flash__special_sonosfet_star  sky130_fd_pr__nfet_g5v0d10v5 sky130_fd_pr__nfet_05v0_nvt  sky130_fd_pr__nfet_03v3_nvt} full_metal 1 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0 doports 1 ad 0.1305 as 0.1305 pd 1.48 ps 1.48 nrd 0.644444444444444 nrs 0.644444444444444 sa 0 sb 0 sd 0 mult 2
+<< end >>

@@ -68,4 +68,3 @@ M. T. Huda, A. N. Irfansyah, and Tasripan, "Desain SAR-ADC Berbasis Time Domain 
 ## Resources
 
 This project is based on the research and findings presented in the paper above. For further technical details on the implementation and simulation results, please refer to the full document.
-

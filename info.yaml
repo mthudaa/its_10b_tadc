@@ -25,8 +25,8 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "ENA"
-  ui[1]: "CLK"
+  ui[0]: "EN"
+  ui[1]: ""
   ui[2]: ""
   ui[3]: ""
   ui[4]: ""
@@ -35,19 +35,19 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "D[0]"
-  uo[1]: "D[1]"
-  uo[2]: "D[2]"
-  uo[3]: "D[3]"
-  uo[4]: "D[4]"
-  uo[5]: "D[5]"
-  uo[6]: "D[6]"
-  uo[7]: "D[7]"
+  uo[0]: "CKO"
+  uo[1]: "DATA[8]"
+  uo[2]: "DATA[7]"
+  uo[3]: "DATA[6]"
+  uo[4]: "DATA[5]"
+  uo[5]: "DATA[4]"
+  uo[6]: "DATA[3]"
+  uo[7]: "DATA[2]"
 
   # Bidirectional pins
-  uio[0]: "D[8]"
-  uio[1]: "D[9]"
-  uio[2]: "EOC"
+  uio[0]: "DATA[1]"
+  uio[1]: "DATA[0]"
+  uio[2]: ""
   uio[3]: ""
   uio[4]: ""
   uio[5]: ""
@@ -55,12 +55,11 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: "VIP"
+  ua[0]: "VCM"
   ua[1]: "VIN"
-  ua[2]: "VCM"
+  ua[2]: "VIP"
   ua[3]: ""
   ua[4]: ""
   ua[5]: ""
-
 # Do not change!
 yaml_version: 6

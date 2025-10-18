@@ -1,0 +1,53 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1757922329
+<< error_p >>
+rect 0 437 18 741
+<< nwell >>
+rect -150 437 0 741
+<< pwell >>
+rect -150 354 0 371
+rect -150 346 -114 354
+rect -36 346 0 354
+rect -150 157 0 346
+<< psubdiff >>
+rect -114 330 -36 354
+rect -114 174 -36 198
+<< nsubdiff >>
+rect -114 655 -36 679
+rect -114 499 -36 523
+<< psubdiffcont >>
+rect -114 198 -36 330
+<< nsubdiffcont >>
+rect -114 523 -36 655
+<< locali >>
+rect -150 859 0 875
+rect -150 825 -100 859
+rect -66 825 0 859
+rect -114 655 -36 825
+rect -114 507 -36 523
+rect -114 330 -36 346
+rect -114 73 -36 198
+rect -150 59 0 73
+rect -150 25 -100 59
+rect -66 25 0 59
+rect -150 23 0 25
+<< viali >>
+rect -100 825 -66 859
+rect -100 25 -66 59
+<< metal1 >>
+rect -150 859 0 900
+rect -150 825 -100 859
+rect -66 825 0 859
+rect -150 800 0 825
+rect -150 59 0 100
+rect -150 25 -100 59
+rect -66 25 0 59
+rect -150 0 0 25
+<< labels >>
+flabel metal1 -150 800 -50 900 0 FreeSans 200 0 0 0 vdd
+port 1 nsew
+flabel metal1 -150 0 -50 100 0 FreeSans 200 0 0 0 vss
+port 2 nsew
+<< end >>

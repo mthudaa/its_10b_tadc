@@ -1,0 +1,30 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1757922329
+<< error_p >>
+rect -109 -152 109 152
+<< nwell >>
+rect -109 -152 109 152
+<< pmos >>
+rect -15 -90 15 90
+<< pdiff >>
+rect -65 -90 -15 90
+rect 15 78 73 90
+rect 15 -78 27 78
+rect 61 -78 73 78
+rect 15 -90 73 -78
+<< pdiffc >>
+rect 27 -78 61 78
+<< poly >>
+rect -15 90 15 116
+rect -15 -116 15 -90
+<< locali >>
+rect 27 78 61 94
+rect 27 -94 61 -78
+<< labels >>
+rlabel pdiff -44 0 -44 0 0 D
+port 1 nsew
+rlabel pdiffc 44 0 44 0 0 S
+port 2 nsew
+<< end >>

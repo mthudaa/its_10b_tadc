@@ -1,0 +1,29 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1757922329
+<< error_p >>
+rect -65 -45 -15 45
+rect 15 -45 73 45
+<< nmos >>
+rect -15 -45 15 45
+<< ndiff >>
+rect -65 -45 -15 45
+rect 15 33 73 45
+rect 15 -33 27 33
+rect 61 -33 73 33
+rect 15 -45 73 -33
+<< ndiffc >>
+rect 27 -33 61 33
+<< poly >>
+rect -15 45 15 71
+rect -15 -71 15 -45
+<< locali >>
+rect 27 33 61 49
+rect 27 -49 61 -33
+<< labels >>
+rlabel ndiff -44 0 -44 0 0 D
+port 1 nsew
+rlabel ndiffc 44 0 44 0 0 S
+port 2 nsew
+<< end >>

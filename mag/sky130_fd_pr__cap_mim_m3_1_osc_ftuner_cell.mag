@@ -1,0 +1,24 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1750568810
+<< metal3 >>
+rect -416 -240 416 240
+<< mimcap >>
+rect -376 160 24 200
+rect -376 -160 -336 160
+rect -16 -160 24 160
+rect -376 -200 24 -160
+<< mimcapcontact >>
+rect -336 -160 -16 160
+<< metal4 >>
+rect -337 160 -15 161
+rect -337 -160 -336 160
+rect -16 -160 -15 160
+rect -337 -161 -15 -160
+<< labels >>
+rlabel metal3 364 0 364 0 0 C2
+port 11 nsew
+rlabel mimcapcontact -176 0 -176 0 0 C1
+port 12 nsew
+<< end >>
