@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO tt_um_tsar_adc
+MACRO tt_um_tadc_its
   CLASS BLOCK ;
-  FOREIGN tt_um_tsar_adc ;
+  FOREIGN tt_um_tadc_its ;
   ORIGIN 0.000 0.000 ;
   SIZE 334.880 BY 225.760 ;
   PIN clk
@@ -28289,6 +28289,6 @@ MACRO tt_um_tsar_adc
         RECT 134.575 -5.650 136.440 -5.170 ;
         RECT 134.575 -5.655 135.065 -5.650 ;
   END
-END tt_um_tsar_adc
+END tt_um_tadc_its
 END LIBRARY
 
