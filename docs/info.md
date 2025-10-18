@@ -7,8 +7,6 @@ You can also include images in this folder and reference them in the markdown. E
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
 
-[![](https://img.shields.io/badge/Technology-CMOS%20130nm-blue.svg)](.) [![](https://img.shields.io/badge/Type-Analog%20Mixed--Signal-lightgrey.svg)](.) [![](https://img.shields.io/badge/Status-Post--Layout-brightgreen.svg)](.)
-
 # Low-Power SAR-ADC for PPG Signal Acquisition
 
 This repository contains the design files and simulation results for a 10-bit SAR-ADC in 180nm CMOS, optimized for low-power biomedical applications like Photoplethysmogram (PPG) signal acquisition.
