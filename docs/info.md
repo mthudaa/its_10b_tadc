@@ -11,12 +11,6 @@ You can also include images in this folder and reference them in the markdown. E
 
 This repository contains the design files and simulation results for a 10-bit SAR-ADC in 180nm CMOS, optimized for low-power biomedical applications like Photoplethysmogram (PPG) signal acquisition.
 
-- [Project Overview](#-project-overview)
-- [Key Specifications](#-key-specifications)
-- [Architecture Details](#️-architecture-details)
-- [How to Cite](#-how-to-cite)
-- [Resources](#-resources)
-
 ---
 
 ## Project Overview
