@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -18,4 +18,4 @@ C {devices/lab_wire.sym} 750 -570 2 0 {name=p67 sig_type=std_logic lab=S[0:8]}
 C {devices/lab_wire.sym} 450 -510 0 0 {name=p70 sig_type=std_logic lab=VCM}
 C {devices/lab_wire.sym} 450 -550 0 0 {name=p71 sig_type=std_logic lab=CF[0:8]}
 C {devices/lab_wire.sym} 450 -530 0 0 {name=p73 sig_type=std_logic lab=SW_IN[0:8]}
-C {devices/code_shown.sym} 410 -420 0 0 {name=s1 only_toplevel=false value=".include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice"}
+C {devices/code_shown.sym} 310 -390 0 0 {name=s1 only_toplevel=false value=".include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice"}

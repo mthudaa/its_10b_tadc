@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -22,4 +22,4 @@ C {devices/lab_wire.sym} 360 -170 0 0 {name=p6 lab=VSS}
 C {cap_array_9b.sym} 510 -100 0 0 {name=x2}
 C {lab_wire.sym} 660 -250 0 1 {name=p1 lab=S[0:8]}
 C {lab_wire.sym} 360 -110 0 0 {name=p7 lab=S[0:8]}
-C {devices/code_shown.sym} 170 -30 0 0 {name=s1 only_toplevel=false value=".include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice"}
+C {devices/code_shown.sym} 180 -30 0 0 {name=s1 only_toplevel=false value=".include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice"}

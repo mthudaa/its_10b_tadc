@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -6,15 +6,15 @@ S {}
 F {}
 E {}
 B 2 2160 -480 2960 -80 {flags=graph
-y1=0.23777238
-y2=1.8766891
+y1=0
+y2=0.01
 ypos1=-0.71545876
 ypos2=2.1572586
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5.9162546e-06
+x2=1.1406187e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -31,9 +31,10 @@ hilight_wave=0
 
 
 digital=0
-color="4 5"
-node="x1.vcp
-x1.vcn"}
+color="4 1 7"
+node="x1.sar9b_0/cks
+x1.sar9b_0/cksb
+x1.sar9b_0/cf[8]"}
 B 2 1320 -480 2120 -80 {flags=graph
 
 
@@ -62,10 +63,11 @@ autoload=0
 color=4
 node=out
 x1=0
-x2=5.9162546e-06
+x2=1.1406187e-05
 
 y1=-520
 y2=520}
+P 4 1 810 -380 {}
 N 200 -210 320 -210 {
 lab=#net1}
 N 320 -230 320 -210 {
@@ -101,7 +103,7 @@ Epowa pow 0 VALUE = \{ V(vdd)*(-i(vd)) \}
 .control  
 global netlist_dir .  
 set num_threads=16
-save cko out pow vip vin x1.vcp x1.vcn 'x1.cf[0]' 'x1.cf[1]' 'x1.cf[2]' 'x1.cf[3]' 'x1.cf[4]' 'x1.cf[5]' 'x1.cf[6]' 'x1.cf[7]' 'x1.cf[8]'
+save cko out pow VDD VSS VCM CLK vip vin x1.VCP x1.VCN
 tran 10n 5350u 0 ; Mengubah start time menjadi 10n
 rusage traniter trantime
 meas tran avg_pow  AVG pow from=1n to=535u
@@ -111,7 +113,7 @@ wrdata adc8b_tb_dynamic.txt out cko pow_a pow_d pow_r vip vin
 quit 1
 .endc
 "}
-C {devices/vsource.sym} 750 -250 0 0 {name=VCLK value="PULSE(0 1.8 0 0 0 100n 200n)" savecurrent=false}
+C {devices/vsource.sym} 750 -250 0 0 {name=VCLK value="PULSE(0 1.8 0 0 0 500n 1u)" savecurrent=false}
 C {devices/lab_wire.sym} 750 -280 0 0 {name=p23 sig_type=std_logic lab=CLK}
 C {devices/lab_wire.sym} 750 -220 2 1 {name=p24 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/corner.sym} 40 -570 0 0 {name=CORNER only_toplevel=false corner=tt}
@@ -134,7 +136,7 @@ C {devices/vsource.sym} 750 -130 0 0 {name=VC value=0.9 savecurrent=false}
 C {devices/lab_wire.sym} 750 -100 2 1 {name=p5 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 750 -160 0 0 {name=p9 sig_type=std_logic lab=VCM}
 C {devices/lab_wire.sym} 570 -490 0 0 {name=p10 sig_type=std_logic lab=EN}
-C {devices/vsource.sym} 820 -130 0 0 {name=VDA2 value="PWL(0 0 10n 1.8)" savecurrent=false}
+C {devices/vsource.sym} 820 -130 0 0 {name=VDA2 value=1.8 savecurrent=false}
 C {devices/lab_wire.sym} 820 -100 2 1 {name=p11 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 820 -160 0 0 {name=p13 sig_type=std_logic lab=EN}
 C {devices/adc_bridge.sym} 1110 -560 0 0 {name=A1 adc_bridge_model= adc_buff}
@@ -173,4 +175,4 @@ C {devices/lab_wire.sym} 1080 -240 0 0 {name=p39 sig_type=std_logic lab=bDOUT8}
 C {lab_wire.sym} 570 -570 0 0 {name=p6 lab=VDD}
 C {lab_wire.sym} 570 -550 0 0 {name=p8 lab=VSS}
 C {devices/lab_wire.sym} 870 -550 0 1 {name=p1 sig_type=std_logic lab="bDOUT[1..0]"}
-C {tt_um_tsar_adc.sym} 720 -530 0 0 {name=x1}
+C {tt_um_tadc_its_pex.sym} 720 -530 0 0 {name=x1}

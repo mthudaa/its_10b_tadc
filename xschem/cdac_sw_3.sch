@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -50,8 +50,8 @@ C {devices/lab_wire.sym} 780 -60 0 0 {name=p31 sig_type=std_logic lab=clk1}
 C {devices/lab_wire.sym} 780 -40 0 0 {name=p32 sig_type=std_logic lab=clkb1}
 C {devices/lab_wire.sym} 640 -80 0 1 {name=p33 sig_type=std_logic lab=VCM}
 C {devices/lab_wire.sym} 1080 -80 0 1 {name=p34 sig_type=std_logic lab=DAC_OUT}
-C {devices/code_shown.sym} 210 120 0 0 {name=s1 only_toplevel=false value=".include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice"}
 C {devices/lab_wire.sym} -180 -180 0 0 {name=p1 lab=CKI}
 C {nooverlap_clk.sym} -30 -170 0 0 {name=x9}
 C {devices/lab_wire.sym} -180 -200 0 0 {name=p4 sig_type=std_logic lab=VDDA}
 C {devices/lab_wire.sym} -180 -160 0 0 {name=p17 sig_type=std_logic lab=VSSA}
+C {devices/code_shown.sym} 290 80 0 0 {name=s1 only_toplevel=false value=".include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice"}

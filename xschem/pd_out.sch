@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -24,4 +24,4 @@ C {devices/ipin.sym} 100 -180 0 0 {name=p4 sig_type=std_logic lab=A}
 C {devices/ipin.sym} 100 -160 0 0 {name=p5 sig_type=std_logic lab=B}
 C {devices/ipin.sym} 100 -200 0 0 {name=p6 sig_type=std_logic lab=VSS}
 C {devices/ipin.sym} 100 -220 0 0 {name=p7 sig_type=std_logic lab=VDD}
-C {devices/code_shown.sym} 90 -10 0 0 {name=s1 only_toplevel=false value=".include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice"}
+C {devices/code_shown.sym} 160 -20 0 0 {name=s1 only_toplevel=false value=".include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice"}

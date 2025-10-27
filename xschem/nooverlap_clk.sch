@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -64,4 +64,4 @@ C {devices/opin.sym} 200 -570 0 0 {name=p13 lab=CLK0}
 C {devices/opin.sym} 200 -540 0 0 {name=p14 lab=CLKB0}
 C {devices/opin.sym} 200 -510 0 0 {name=p15 lab=CLK1}
 C {devices/opin.sym} 200 -480 0 0 {name=p16 lab=CLKB1}
-C {devices/code_shown.sym} 430 -370 0 0 {name=s1 only_toplevel=false value=".include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice"}
+C {devices/code_shown.sym} 420 -350 0 0 {name=s1 only_toplevel=false value=".include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice"}

@@ -10,16 +10,16 @@ if [ -z "${RAND}" ]; then
 fi
 
 if command -v librelane >/dev/null 2>&1; then
-    LOG=/foss/designs/its_10b_tadc/librelane/runs/${RAND}/sar9b/result_sar_sky130A.log
-    WORKDIR=/foss/designs/its_10b_tadc/librelane/runs/${RAND}/sar9b
+    LOG=/foss/designs/its_10b_tadc/librelane/sar9b/result_sar_sky130A.log
+    WORKDIR=/foss/designs/its_10b_tadc/librelane/sar9b
     DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
     # Switch to ihp-sg13g2 PDK
     # shellcheck source=/dev/null
     # source sak-pdk-script.sh sky130A sky130_fd_sc_hd > /dev/null
     # Run the LibreLane smoke test
-    mkdir -p "$WORKDIR"
-    cp -r "$DIR"/* "$WORKDIR"
+    # mkdir -p "$WORKDIR"
+    # cp -r "$DIR"/* "$WORKDIR"
     librelane --manual-pdk "$WORKDIR/config.json" > "$LOG"
     # Check if there is an error in the log
     if grep -q "ERROR" "$LOG"; then

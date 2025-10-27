@@ -1,0 +1,61 @@
+** sch_path: /foss/designs/its_10b_tadc/xschem/adc_tb.sch
+**.subckt adc_tb
+VSS1 net2 net1 SIN(0 -0.9 19343.44951923077)
+VSS2 net3 net1 SIN(0 0.9 19343.44951923077)
+VSS3 net1 VSS 0.9
+VCLK CLK VSS PULSE(0 1.8 0 0 0 100n 200n)
+R1 VIN net2 50 m=1
+R2 VIP net3 50 m=1
+VC VCM VSS 0.9
+VDA2 EN VSS 1.8
+A1 [ bDOUT0 ] [ DOUT0 ] adc_buff
+A2 [ bDOUT1 ] [ DOUT1 ] adc_buff
+A3 [ bDOUT2 ] [ DOUT2 ] adc_buff
+A4 [ bDOUT3 ] [ DOUT3 ] adc_buff
+A5 [ bDOUT4 ] [ DOUT4 ] adc_buff
+A6 [ bDOUT5 ] [ DOUT5 ] adc_buff
+A7 [ bDOUT6 ] [ DOUT6 ] adc_buff
+A8 [ bDOUT7 ] [ DOUT7 ] adc_buff
+VS2 VSS GND 0
+VD VDD VSS 1.8
+A9 [ bDOUT8 ] [ DOUT8 ] adc_buff
+x1 VDD VSS CLK CKO bDOUT8 bDOUT7 bDOUT6 bDOUT5 bDOUT4 bDOUT3 bDOUT2 bDOUT1 bDOUT0 VCM VIP VIN EN tt_um_tadc_its_pex
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+* .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+*.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hdll/spice/sky130_fd_sc_hdll.spice
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+
+
+.option wnflag=0 bypass=1
+.options method=trap rawfile=binary
+.options solver=klu nomod
+Eout out 0 VALUE = { ((V(dout0)*256 + V(dout1)*128 + V(dout2)*64 + V(dout3)*32 + V(dout4)*16 + V(dout5)*8 + V(dout6)*4 + V(dout7)*2 + V(dout8)*1)/3.3) - 256 }
+Epowa pow 0 VALUE = { V(vdd)*(-i(vd)) }
+.model adc_buff adc_bridge(in_low=0.18 in_high=1.62 rise_delay=100p fall_delay=100p)
+.control
+global netlist_dir .
+set num_threads=16
+save cko out pow VDD VSS VCM CLK vip vin x1.VCP x1.VCN
+tran 10n 5350u 0 ; Mengubah start time menjadi 10n
+rusage traniter trantime
+meas tran avg_pow  AVG pow from=1n to=535u
+remzerovec
+write adc8b_tb_dynamic.raw
+wrdata adc8b_tb_dynamic.txt out cko pow_a pow_d pow_r vip vin
+quit 1
+.endc
+
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  tt_um_tadc_its_pex.sym # of pins=7
+** sym_path: /foss/designs/its_10b_tadc/xschem/tt_um_tadc_its_pex.sym
+.include /foss/designs/its_10b_tadc/xschem/tt_um_tadc_its_pex.spice
+.GLOBAL GND
+.end

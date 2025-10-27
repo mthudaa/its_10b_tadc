@@ -1,0 +1,7 @@
+** sch_path: /foss/designs/its_10b_tadc/xschem/tt_um_tadc_its.sch
+.subckt tt_um_tadc_its VDPWR VGND clk uo_out[0],uo_out[1],uo_out[2],uo_out[3],uo_out[4],uo_out[5],uo_out[6],uo_out[7] uio_out[0],uio_out[1] ua[0],ua[2],ua[1] ui_in[0] 
+*.PININFO VDPWR:I VGND:I clk:I uo_out[0:7]:O uio_out[0:1]:B ui_in[0]:I ua[0],ua[2],ua[1]:I 
+x3 ?1 VDPWR ?1 VGND ?1 CKS ?1 CKSB ?1 ua[2] ?1 ua[1] ?1 VCP ?1 VCN  th_dif_sw
+**** end_element
+x1 ?1 clk ?1 VDPWR ?1 VGND ?1 VCP ?1 VCN ?1 CMP_P ?1 CMP_N ?1 RDY  tdc
+**** end_element
